@@ -5,9 +5,7 @@ from IPython.display import display
 # Analisar sequestro
 # 1. Comportamento temporal (ano)
 # 2. Qual região teve mais sequestro?
-# Analisar roubo_celular
-# 1. Qual epoca do ano é mais propenso?
-# 2. Existem DPs que registram muito mais ocorrencias?
+
 
 # OBTER DADOS
 try:
