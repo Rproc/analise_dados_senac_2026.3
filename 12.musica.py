@@ -45,3 +45,9 @@ sem_execucao = df_merge.filter(
 print(sem_execucao)
 
 # Qual genero tem mais musicas não tocadas?
+nao_tocadas = df_merge.filter(
+    pl.col('plays').is_null()
+).group_by('genre').agg(
+    pl.len().alias('as_piores')
+).sort('as_piores', descending=True)
+print(nao_tocadas)

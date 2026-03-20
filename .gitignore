@@ -1,4 +1,5 @@
-# ignorar venv
-/venv
-
-.vscode
+# arquivos ignorados
+venv/
+Base/
+dados_bronze/
+Music Info.csv
