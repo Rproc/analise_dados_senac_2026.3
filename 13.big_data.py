@@ -36,8 +36,7 @@ try:
         pl.col('VALOR PARCELA').str.replace(',', '.').cast(pl.Float64)
     )
     df_bf.write_parquet(
-        'C:/Users/renan.duarte/Documents/' \
-        'analise_dados_senac_2026.3/dados_bronze/df_bf.parquet')
+        'C:/Users/renan.duarte/Documents/analise_dados_senac_2026.3/dados_bronze/df_bf.parquet')
     gc.collect()
     hora_fim = dt.datetime.now()
     print(f'Tempo total: {hora_fim - hora_inicio}')
